@@ -1,0 +1,21 @@
+.bar1 { fill: #33CCFF; }
+.bar2 { fill: #CCFF99; }
+.bar3 { fill: #CC99CC; }
+.bar4 { fill: #FFFF99; }
+.bar5 { fill: #CCFFCC; }
+.bar6 { fill: #66CCCC; }
+.bar7 { fill: #CCFF33; }
+.bar8 { fill: #CCFF33; }
+.bar9 { fill: #FF99CC; }
+.bar10 { fill: #CCCC99; }
+.bar:hover {fill: orange; }
+.axis--x path { display: none; }
+.line {
+    fill: none;
+    stroke: royalblue;
+    stroke-width: 3;
+}
+.dot {
+    fill: royalblue;
+    stroke: royalblue;
+}

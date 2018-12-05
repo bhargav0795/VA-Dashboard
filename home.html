@@ -1,0 +1,34 @@
+<div layout="row"  >
+  <div flex="75" class="column">
+      <md-card layout-padding>
+        <center><p style = "font-size : 20px"><b>Form Metrics</b> </p>
+
+      <div class="" id="chart2">
+
+      </div>
+    </md-card>
+    <md-card layout-padding>
+      <center><p style = "font-size : 20px"><b>Audience Metrics</b> </p>
+    <div class="" id="chart1">
+    </div>
+    </md-card>
+  </div>
+  <div flex="25" class="column">
+    <md-card layout-padding>
+      <p style = "text-transform: uppercase; "><b>Google Analytics sessions by channel (Top 3)</b></p>
+      <div class="" ng-repeat="x in sortedArray | limitTo:3">
+
+        <p style = "text-transform: uppercase; ">{{x[0]}} : {{x[1]}}</p>
+      </div>
+
+    </md-card>
+    <md-card layout-padding>
+        <p style = "text-transform: uppercase; "> <b>Google Analytics Sessions by Device Type (Top 3)</b> </p>
+      <div class="" ng-repeat = "y in sortedDevices | limitTo:3" >
+      <p style = "text-transform: uppercase; "> {{y[0]}} : {{y[1]}}</p>
+
+      </div>
+
+    </md-card>
+  </div>
+</div>

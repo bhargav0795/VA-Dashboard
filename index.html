@@ -1,0 +1,52 @@
+<html lang="en"  style="background:#525151">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+  <!--d3.js-->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+  <!-- Your application bootstrap  -->
+
+  <script type="text/javascript" src="script.js" ></script>
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+</head>
+<body ng-app="MainApp" ng-controller="ctrl" ng-cloak>
+
+<div  style="background:#525151" layout="column"  layout-fill >
+  <div  style="background:#17a2b7;height:10%;color:white" layout="row" layout-align="center center">
+    <h4>Lending Tree Site Visitor Behaviour</h4>
+
+  </div>
+  <md-card class="" layout-padding layout="row" layout-align="center center">
+    <!-- {{products}} -->
+    <label><b>Product Reporting </b> </label>
+    <select class=""  ng-model="option" ng-change="drawChart(option)" name="">
+      <option  ng-repeat=" x in products" value="{{x}}" >{{x}}</option>
+
+    </select>
+    <!-- <select  ng-model="option" ng-change="drawChart(option)" ng-options="x for x in products"> -->
+
+  </md-card>
+  <div layout="row" flex="95">
+
+    <div ui-view></div>
+  </div>
+</div>
+
+<!-- <script type="text/javascript" src="horizontalBar.js" ></script> -->
+<div></div>
+
+</body>
+</html>
