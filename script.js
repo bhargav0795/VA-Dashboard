@@ -19,7 +19,7 @@ app.controller('ctrl', function($scope, $http) {
   $scope.option = "Auto";
   $http({
   method: 'GET',
-  url: './data/productreport.json'
+  url: 'https://raw.githubusercontent.com/bhargav0795/VA-Dashboard/master/data/productreport.json'
   }).then(function successCallback(response) {
     $scope.response = response.data;
   }, function errorCallback(response) {
@@ -30,7 +30,7 @@ app.controller('ctrl', function($scope, $http) {
 
   $http({
   method: 'GET',
-  url: './data/datePlot.json'
+  url: 'https://raw.githubusercontent.com/bhargav0795/VA-Dashboard/master/data/datePlot.json'
   }).then(function successCallback(response) {
     //console.log(response.data)
     $scope.datesResponse = response.data;
@@ -43,7 +43,7 @@ app.controller('ctrl', function($scope, $http) {
 
   $http({
   method: 'GET',
-  url: './data/devicetypeJson.json'
+  url: 'https://raw.githubusercontent.com/bhargav0795/VA-Dashboard/master/data/devicetypeJson.json'
   }).then(function successCallback(response) {
     console.log(response.data)
     $scope.deviceType = response.data;
@@ -56,7 +56,7 @@ app.controller('ctrl', function($scope, $http) {
 
   $http({
   method: 'GET',
-  url: './data/cSourceJson.json'
+  url: 'https://raw.githubusercontent.com/bhargav0795/VA-Dashboard/master/data/cSourceJSON.json'
   }).then(function successCallback(response) {
     //console.log(response.data)
     $scope.cSourceResponse = response.data;
